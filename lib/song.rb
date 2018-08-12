@@ -15,5 +15,11 @@ class Song
     song.save
     return song
   end
+  
+  def self.new_by_name(name)
+    song = self.new 
+    song.name = name
+    retrun song
+  end
 
 end
