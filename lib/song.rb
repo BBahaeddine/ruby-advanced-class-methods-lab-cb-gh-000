@@ -54,5 +54,10 @@ class Song
     song.artist_name = artistName
     song
   end
+  
+  def self.create_from_filename(filename)
+    song = self.new_form_filename(filename)
+    song.save
+  end
 
 end
