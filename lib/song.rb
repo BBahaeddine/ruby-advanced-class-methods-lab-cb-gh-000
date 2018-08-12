@@ -29,5 +29,9 @@ class Song
     return song
     # self.new_by_name(name)
   end
+  
+  def self.find_by_name(name)
+    self.all.each{|item| }
+  end
 
 end
